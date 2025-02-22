@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-openai_key = os.environ.get('OPENAI_KEY')
+openai_key = os.environ.get('OPENAI_API_KEY')
 client = OpenAI(api_key=openai_key)
 
 def generate_desc(chunk):
